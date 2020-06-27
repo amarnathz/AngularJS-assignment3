@@ -47,6 +47,7 @@
 
         //console.log("2", menu.found);
       } else {
+        menu.found =  [];
         menu.msg = "Please Enter item for Menu Choice";
       }
     };
