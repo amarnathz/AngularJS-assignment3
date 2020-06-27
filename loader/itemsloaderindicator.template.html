@@ -1,0 +1,12 @@
+<div class="loader">
+  <!-- <button ng-click="list.removeItem($index);">Remove Item</button> -->
+</div>
+<ol>
+  <li ng-repeat="item in menu.foundItem"  >
+    <b>Name :</b> {{item.name}} 
+</br><b>Description :</b> {{item.description}}
+</br><button ng-click = "menu.onRemove({index : $index});">Don't want this one!</button>
+  </li>
+</ol>
+
+<div  class="alert alert-danger" role="alert" ng-show="menu.onEmpty"> {{menu.onEmpty}}</div>
